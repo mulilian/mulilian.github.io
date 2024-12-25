@@ -246,19 +246,19 @@ th {
 }
 
 .icon-chevron-thin-left:before {
-  content: "\e904";
+  content: "\e901";
 }
 
 .icon-chevron-thin-right:before {
-  content: "\e905";
-}
-
-.icon-pinterest-p:before {
   content: "\e900";
 }
 
+.icon-pinterest-p:before {
+  content: "\e904";
+}
+
 .icon-twitter:before {
-  content: "\e901";
+  content: "\e960";
 }
 
 .icon-instagram:before {
@@ -266,7 +266,7 @@ th {
 }
 
 .icon-facebook:before {
-  content: "\e903";
+  content: "\e920";
 }
 
 body {
