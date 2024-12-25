@@ -572,6 +572,28 @@ svg path {
     margin-bottom: 0;
   }
 }
+#hero .wrapper .welcome .social {
+  display: flex;
+  width: 180px;
+  justify-content: space-between;
+}
+#hero .wrapper .welcome .social a {
+  color: #fff;
+  text-decoration: none;
+}
+#hero .wrapper .welcome .social i {
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #909090;
+  transition: background-color 0.2s ease-in-out;
+}
+#hero .wrapper .welcome .social i:hover {
+  background-color: #020202;
+}
 #hero .wrapper .photographer {
   width: 55%;
   align-self: flex-end;
