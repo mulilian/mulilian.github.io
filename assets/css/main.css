@@ -1053,6 +1053,11 @@ svg path {
 #contact .wrapper .blurb p {
   margin-bottom: 45px;
 }
+#contact .wrapper .blurb .imgqrcode {
+  width: 250px;
+  height: 250px;
+  filter: grayscale(100%);
+}
 #contact .wrapper form {
   position: relative;
   display: flex;
