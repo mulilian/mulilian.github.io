@@ -57,11 +57,18 @@
 		
 			h1
 				@include heading
-	
+				
 			p
 				max-width: 450px
-				margin-bottom: 40px
+				margin-bottom: 30px
 				
+			@media (max-width: 1180px)
+				&:after
+					display: none
+					
+				p
+					margin-bottom: 0
+
 			.social
 				display: flex
 				width: 180px
@@ -83,14 +90,7 @@
 					
 					&:hover
 						background-color: #020202
-					
-			@media (max-width: 1180px)
-				&:after
-					display: none
-					
-				p
-					margin-bottom: 0
-				
+						
 		.photographer
 			width: 55%
 			align-self: flex-end
