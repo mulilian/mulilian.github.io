@@ -1,27 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="notranslate" translate="no">
   <head>
     <title>Mulilian</title>
     <meta charset="utf-8">
+	<meta name="google" content="notranslate" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Jade website template">
     <meta name="keywords" content="apollo, jade, template, html, sass, jquery">
     <meta name="author" content="Bucky Maler">
     <link rel="stylesheet" href="assets/css/main.css">
+	<script>
+		function getCurrentYear(){
+			var currentYear = new Date().getFullYear();
+			document.getElementById('currentYear').textContent = currentYear;
+		}
+	</script>
   </head>
-	
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K36XB4HV22"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-K36XB4HV22');
-</script>
-	
-  <body>
+  <body onload="getCurrentYear();">
     <section id="hero"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 163.5" style="enable-background:new 0 0 100 163.5;" xml:space="preserve">
 <g transform="translate(0.000000,749.000000) scale(0.100000,-0.100000)">
 	<path d="M352.5,7487.4C351.4,7484.3,0,5858.4,0,5856.4c0-0.7,74-0.9,164.1-0.7l164.3,0.7l31.6,174.6l31.6,174.6h106.9h106.9l24.4-127.7c13.5-70.3,28.6-149.1,33.6-175l9.2-47.6h163.5H1000l-1.1,4.8c-2.8,11.1-350.7,1626.1-350.7,1627.9c0,1.1-61.1,2-147.3,2C384.8,7490,353.1,7489.3,352.5,7487.4z M542.3,6713.5c22.3-163.5,40.4-298.8,40.4-300.5c0-2.8-10.7-3.3-84-3.3h-84.2l1.3,7.2c2.2,12.7,84,590.8,84,593.4C499.8,7022.7,507,6971.7,542.3,6713.5z"/>
@@ -33,17 +29,18 @@
         </div>
         <ul class="nav">
           <li><a href="#about">About</a></li>
-          <li><a href="#full-slide">Work</a></li>
+          <li><a href="#featured">Work</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </header>
       <div class="wrapper">
         <div class="welcome">
           <h1><strong>连理木</strong> 书斋</h1>
-	  <div class="social"><a href="https://www.amazon.com/kindle-dbs/storefront" ><i class="icon-facebook"></i></a><a href="https://read.amazon.com/landing" ><i class="icon-instagram"></i></a><a href="#featured" ><i class="icon-twitter"></i></a><a href="#contact" ><i class="icon-pinterest-p"></i></a></div>
+	  <div class="social"><a href="https://www.amazon.com/dp/B0CTHQN84C" ><i class="icon-facebook"></i></a><a href="https://read.amazon.com/landing" ><i class="icon-instagram"></i></a><a href="#featured" ><i class="icon-twitter"></i></a><a href="#contact" ><i class="icon-pinterest-p"></i></a></div>
 	  <br>
-	  <p>《晋书·元帝记》云：“一角之兽，连理之木。” 连理木，又名连理枝。意思是不同根的树木，而枝干天然连生在一起。一角兽则指麒麟，古时皆被认为是吉祥的征兆。</p>
+	  <p>《晋书·元帝记》云：“一角之兽，连理之木。” 连理木，又名连理枝。意为不同根的树木，而枝干天然连生在一起。一角兽则指麒麟，古时皆被认为是吉祥的征兆。</p>
 	  <p>唐代郭橐驼所著《种树书》又云："桃接李枝则红而甘；梅树接桃则脆；桃树接杏则大；李树接桃则为桃李。" 故每两树相连，实为相得益彰矣。</p>
+	  <p>现代之书斋，须离不开好用之键盘，及好用之中文输入法。这里谨推荐与各位<a href="#featured"><u style="color:MediumSeaGreen;"> 两板斧 </u></a>输入法。</p>
 	</div>
         <div class="photographer"><img src="assets/img/hero.png" alt="Photographer"></div>
       </div>
@@ -57,8 +54,8 @@
         <div class="camera"><img src="assets/img/camera.png" alt="Camera"></div>
         <div class="blurb">
           <h2><strong>Lilian</strong>'s Book Den</h2>
-          <p>“He said that we belonged together because he was born with a flower, and I was born with a butterfly and that flowers and butterflies need each other for survival.” — Gemma Malley, The Declaration</p>
-	  <p>“Without darkness, nothing comes to birth, As without light, nothing flowers.” ― May Sarton</p>
+          <p>“He said that we belonged together because he was born with a flower, and I was born with a butterfly and that flowers and butterflies need each other for survival.” <br> — Gemma Malley, The Declaration</p>
+	  <p>“Without darkness, nothing comes to birth, As without light, nothing flowers.” <br> ― May Sarton</p>
           <!-- div class="social"><a href="#"><i class="icon-facebook"></i></a><a href="#"><i class="icon-instagram"></i></a><a href="#"><i class="icon-twitter"></i></a><a href="#"><i class="icon-pinterest-p"></i></a></div -->
         </div>
       </div>
@@ -81,9 +78,12 @@
 </svg>
       <div class="wrapper">
         <div class="blurb">
-          <h2><strong>Ut enim</strong> ad minim</h2>
-		<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-	  	<!-- p><a href="https://my-fingertips.github.io/my-fingertips/Apollo.zip" target="_blank" rel="noopener noreferrer">Apollo.zip</a></p -->		
+          <h2><strong>两板斧</strong> 双拼/音形</h2>
+		<p>开门见山，两板斧有两个特别优势：</p>
+		<p>第一板斧，是以人体工学为主旨，精心设计之双拼： 古有量体裁衣，今有量指置键。各手指各适其适。对平翘舌不分的人群，尤其友好。</p>
+		<p>第二板斧，是简洁高效之辅助形码： 极致简洁，一键只有一形，而效率堪比五笔。超九成机会，无需选字词。</p>
+		<p>最后，基于微软拼音开发，无隐私之忧，无广告干扰。</p>
+		<p><a href="LBanFu.html"><u style="color:MediumSeaGreen;">体验与练习</u></a> * <a href="assets/msi/LBanFu.zip"><u style="color:MediumSeaGreen;">免费下载（Win10/11 64-bit）</u></a> * <a href="https://www.amazon.com/dp/B0CTHQN84C"><u style="color:MediumSeaGreen;">详细攻略</u></a></p>		
         </div>
         <div class="featured"><img src="assets/img/featured.jpg" alt="Featured"></div>
       </div>
@@ -95,18 +95,13 @@
 </svg>
       <div class="wrapper">
         <div class="blurb">
-          <h2><strong>More</strong> to come</h2>
-          <p>If you have any question, or any suggestion to make this site more useful, please feel free to drop a line, with the form below！</p>
-	  <p>如有任何问题, 或其他需要，请不吝告知</p>
+          <h2><strong>More</strong> details</h2>
+          <p>When I was a boy, I used to pull a big cross saw with my dad. He'd use his right hand, so I'd have to use my left. <br>― Joe Frazier</p>
+          <p>The five separate fingers are five independent units. Close them and the fist multiplies strength. <br>― James Cash Penney</p>
+		  <p>尝有人言，键盘输入法，以左右手均衡一致为贵。此言差矣。左右手看似对称，但各擅胜场，必须各展所长，方能配合无间。<br>如人使长斧，则必以利手握杆于前；使长枪，则必以利手握杆于后。此乃顺事物之自然。自古至今，少有反之而行，却称便捷者。</p>
+		  <p>尝闻戚继光之神奇鸳鸯阵，‘长短相杂，刺卫兼合’。各式兵器，互相依赖呼应，每战必克。但假若动作整齐划一，优势反而荡然无存。<br>此正如人之五指，各有长短，须要相互配合，各适其适，方能达到 1+1 大于 2 的效果。</p>
         </div>
-        <!-- form>
-          <input type="email" placeholder="Your Email">
-          <input type="text" placeholder="Subject">
-          <textarea placeholder="Message"></textarea>
-          <input type="submit" value="Send Message">
-      </form -->
       </div>
-      <!--p class="copyright">&copy; Mulilian 1863</p-->
     </section>	  
     <section id="three-slide"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 248.8" style="enable-background:new 0 0 100 248.8;" xml:space="preserve">
 <g transform="translate(0.000000,749.000000) scale(0.100000,-0.100000)">
@@ -131,7 +126,7 @@
         <div class="blurb">
           <h2><strong>Say</strong> Hello</h2>
           <p>If you have any question, or any suggestion, please feel free to scan the following QR code with your phone, then drop a line！</p>
-          <p>如有任何问题, 或其他需要，请不吝扫码以电邮告知</p>
+          <p>如有任何问题，建议，或其他需要，请不吝扫码以电邮告知</p>
 	</div>
         <img class="imgqrcode" src="./assets/img/qrcode.svg">
         <!-- form>
@@ -141,7 +136,7 @@
           <input type="submit" value="Send Message">
       </form -->
       </div>
-      <p class="copyright">&copy; Mulilian 1863</p>
+      <p class="copyright">&copy; <i>Mulilian/连理木 <span id="currentYear"></span></i></p>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
