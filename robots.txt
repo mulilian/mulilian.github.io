@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: /assets/
-Disallow: /letters/
 Sitemap: https://mulilian.github.io/sitemap.xml
